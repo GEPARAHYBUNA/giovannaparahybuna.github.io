@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Giovanna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#ferramentas">Ferramentas</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="foto-container">
+            <img src="./imagens/foto..jpeg" alt="Sua Foto" class="foto-perfil">
+            <a href="https://www.linkedin.com/in/giovannaparahybuna" target="_blank" class="linkedin-link">
+                <img src="./imagens/icons8-linkedin-48.png" alt="logo_linkedin" class="logo-linkedin">
+                Giovanna Elen Parahybuna
+            </a>
+            <a href="https://github.com/GEPARAHYBUNA" target="_blank" class="github-link">
+                <img src="./imagens/github.png" alt="logo_github" class="logo-github">
+                GEPARAHYBUNA
+            </a>
+        </div>
+        <div class="texto-apresentacao">
+            <h2>Olá! Me chamo Giovanna 👋</h2>
+            <p>Graduanda no último ano de Análise e Desenvolvimento de Sistemas, com experiência como Analista de Dados Jr. Possuo habilidades em análise de dados, estatísticas e aprendizado de máquina, utilizando essas competências para gerar insights que apoiem a tomada de decisões e a otimização de processos.</p>
+        </div>
+    </section>
+    
+    <!-- Carrossel de Ferramentas -->
+    <section id="ferramentas">
+        <h2>Ferramentas Dominadas</h2>
+        <div class="carousel-container">
+            <div class="carousel-ferramentas">
+                <img src="./imagens/aws.png" alt="AWS">
+                <img src="./imagens/azure.png" alt="Azure">
+                <img src="./imagens/excel.png" alt="Excel">
+                <img src="./imagens/postgres.png" alt="PostgreSQL">
+                <img src="./imagens/power_bi.png" alt="Power BI">
+                <img src="./imagens/python.png" alt="Python">
+                <img src="./imagens/tableau.png" alt="Tableau">
+                <img src="./imagens/git.png" alt="Git">
+                <img src="./imagens/databricks.png" alt="Databricks">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="projetos-container">
+            <div class="projeto">
+                <h3>Análise de Turnover</h3>
+                <div class="projeto-info">
+                    <span class="tag">Análise de Dados</span>
+                    <p>Uma análise de caso de Turnover utilizando python para manipulação e consulta
+                        dos dados, gerando insights para a tomada de decisão.
+                    </p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
+            <div class="projeto">
+                <img src="projeto2.jpg" alt="Projeto 2">
+                <div class="projeto-info">
+                    <span class="tag">Machine Learning</span>
+                    <h3>Classificação de Imagens</h3>
+                    <p>Um modelo de Machine Learning para classificar imagens usando Python e TensorFlow.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
+            <div class="projeto">
+                <img src="projeto3.jpg" alt="Projeto 3">
+                <div class="projeto-info">
+                    <span class="tag">E-commerce</span>
+                    <h3>Loja Virtual</h3>
+                    <p>Desenvolvimento de um sistema de e-commerce utilizando React e Firebase.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
+            <div class="projeto">
+                <img src="projeto4.jpg" alt="Projeto 4">
+                <div class="projeto-info">
+                    <span class="tag">Data Science</span>
+                    <h3>Análise de Dados</h3>
+                    <p>Um painel de análise interativo utilizando Python e Pandas.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <section id="contato">
+            <h2>Informações de Contato</h2>
+            <div class="contato-item">
+                <p>Email: <a href="mailto:giovannaparahybuna@gmail.com">giovannaparahybuna@gmail.com</a></p>
+                <button class="copy-btn" onclick="copiarTexto('giovannaparahybuna@gmail.com')">
+                    📄​
+                </button>
+            </div>
+            <div class="contato-item">
+                <p>Telefone: <a href="tel:+5511988002023">(11) 98800-2023</a></p>
+                <button class="copy-btn" onclick="copiarTexto('+5511988002023')">
+                    📄​
+                </button>
+            </div>
+    </section>
+        
+    <script>
+        function copiarTexto(texto) {
+    navigator.clipboard.writeText(texto).then(() => {
+        alert("Texto Copiado " );
+    });
+}
+
+    </script>
+</body>
+</html>

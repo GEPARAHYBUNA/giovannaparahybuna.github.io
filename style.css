@@ -1,0 +1,307 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #1e90ff;
+}
+
+/* Seção Sobre */
+#sobre {
+    background-color: #fff;
+    padding: 100px 20px 50px;
+    text-align: left; 
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 60px;
+}
+
+#sobre .foto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30vh;
+    gap: 45px;
+    margin-bottom: 25vh;
+}
+
+#sobre img.foto-perfil {
+    width: 37vh;
+    height: 37vh;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.linkedin-link {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    text-decoration: none;
+    font-size: 16px;
+    color: #0077b5; 
+    font-weight: bold;
+  }
+
+.logo-linkedin {
+    width: 30px;
+    height: 27px;
+  }
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    text-decoration: none;
+    font-size: 16px;
+    color: #0077b5; 
+    font-weight: bold;
+  }
+
+.logo-github {
+    width: 30px;
+    height: 27px;
+  }
+  
+#sobre img.foto-perfil:hover {
+    transform: scale(1.1);
+}
+
+#sobre .texto-apresentacao {
+    max-width: 600px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+#sobre p {
+    font-size: 1.2em;
+}
+
+/* Seção Portfólio */
+#ferramentas{
+    h2 {
+        font-size: 2em;
+        color: #bbbbbb;
+    }
+    background-color: #1c1c2b;
+    color: rgb(233, 215, 215);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+#portfolio{
+    h2 {
+        font-size: 2em;
+        color: #bbbbbb;
+    }
+    background-color: #1c1c2b;
+    color: rgb(233, 215, 215);
+    padding: 50px 20px;
+    text-align: center;
+}
+/* 🔹 Carrossel de Ferramentas */
+.carousel-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #1c1c2b; 
+    text-align: center;
+}
+
+.carousel-container h2 {
+    font-size: 1.8em;
+    color: #ffb400;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.carousel-ferramentas {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.carousel-ferramentas img {
+    width: 50px;  
+    height: 50px; 
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.carousel-ferramentas img:hover {
+    transform: scale(1.2);
+}
+
+/* 🔹 Seção de Portfólio */
+#portfolio {
+    padding: 50px 20px;
+    background-color: #0f0f1a;
+    color: white;
+    text-align: center;
+}
+
+/* 🔹 Grid Responsivo para Projetos (2 por linha) */
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+    max-width: 800px; /* Limitando largura para centralizar */
+    margin: auto; /* Centraliza na tela */
+}
+
+.projeto {
+    background: #1c1c2b;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projeto-info {
+    margin-top: 15px;
+}
+
+.projeto-info .tag {
+    background: #7755f1;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.projeto-info h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.projeto-info p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.projeto-info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #7755f1;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.projeto-info a:hover {
+    background: #7755f1;
+}
+
+/* Seção Contato */
+#contato {
+    background-color: #0f0f1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 350px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 5px rgba(18, 19, 31, 0.1);
+}
+
+#contato h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #bbb;
+    font-weight: normal;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+#contato p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+#contato a {
+    color: #5654fc;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+#contato a:hover {
+    color: #f0e5ce;
+}
+
+.copy-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #5654fc;
+    transition: transform 0.2s ease;
+}
+
+.copy-btn:hover {
+    transform: scale(1.1);
+    color: #ffaa00;
+}
