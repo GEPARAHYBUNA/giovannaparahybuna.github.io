@@ -7,7 +7,6 @@ body {
     padding: 0;
 }
 
-
 h2 {
     font-size: 2em;
     color: #333;
@@ -50,9 +49,9 @@ nav ul li a:hover {
 #sobre {
     background-color: #fff;
     padding: 100px 20px 50px;
-    text-align: left; 
+    text-align: left;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin-top: 60px;
 }
 
@@ -75,33 +74,33 @@ nav ul li a:hover {
 .linkedin-link {
     display: flex;
     align-items: center;
-    gap: 5px; 
+    gap: 5px;
     text-decoration: none;
     font-size: 16px;
-    color: #0077b5; 
+    color: #0077b5;
     font-weight: bold;
-  }
+}
 
 .logo-linkedin {
     width: 30px;
     height: 27px;
-  }
+}
 
 .github-link {
     display: flex;
     align-items: center;
-    gap: 5px; 
+    gap: 5px;
     text-decoration: none;
     font-size: 16px;
-    color: #0077b5; 
+    color: #0077b5;
     font-weight: bold;
-  }
+}
 
 .logo-github {
     width: 30px;
     height: 27px;
-  }
-  
+}
+
 #sobre img.foto-perfil:hover {
     transform: scale(1.1);
 }
@@ -118,7 +117,7 @@ nav ul li a:hover {
 }
 
 /* Seção Portfólio */
-#ferramentas{
+#ferramentas {
     h2 {
         font-size: 2em;
         color: #bbbbbb;
@@ -129,8 +128,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-
-#portfolio{
+#portfolio {
     h2 {
         font-size: 2em;
         color: #bbbbbb;
@@ -140,13 +138,14 @@ nav ul li a:hover {
     padding: 50px 20px;
     text-align: center;
 }
+
 /* 🔹 Carrossel de Ferramentas */
 .carousel-container {
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;
     padding: 20px 0;
-    background-color: #1c1c2b; 
+    background-color: #1c1c2b;
     text-align: center;
 }
 
@@ -165,8 +164,8 @@ nav ul li a:hover {
 }
 
 .carousel-ferramentas img {
-    width: 50px;  
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     transition: transform 0.3s;
     cursor: pointer;
 }
@@ -304,4 +303,80 @@ nav ul li a:hover {
 .copy-btn:hover {
     transform: scale(1.1);
     color: #ffaa00;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    #sobre {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    #sobre .foto-container {
+        margin-left: 0;
+        margin-bottom: 20vh;
+    }
+
+    #sobre img.foto-perfil {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .projetos-container {
+        grid-template-columns: 1fr; /* 1 coluna */
+        max-width: 100%;
+    }
+
+    .projeto-info h3 {
+        font-size: 1.5em;
+    }
+
+    #contato {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .carousel-container {
+        padding: 10px 0;
+    }
+
+    .carousel-ferramentas img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (smartphones) */
+@media screen and (max-width: 480px) {
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    #sobre .foto-container {
+        margin-left: 0;
+    }
+
+    #sobre img.foto-perfil {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    #contato {
+        padding: 12px;
+        font-size: 0.8em;
+    }
+
+    .projeto-info h3 {
+        font-size: 1.2em;
+    }
+
+    .carousel-ferramentas img {
+        width: 35px;
+        height: 35px;
+    }
 }
