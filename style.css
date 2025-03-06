@@ -249,7 +249,6 @@ nav ul li a:hover {
 }
 
 /* Estilo da seção de Contato */
-/* Estilo da seção de Contato */
 #contato {
     background-color: #f7f7f7;
     padding: 30px 15px;
@@ -330,6 +329,19 @@ nav ul li a:hover {
     outline: none;
 }
 
+/* Responsividade - Contato */
+@media (max-width: 480px) {
+    .contato-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .copy-btn {
+        width: 100%;
+    }
+}
 
 /* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
